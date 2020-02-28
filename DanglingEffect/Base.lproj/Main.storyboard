@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DanglingEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYI-rA-8CW">
+                                <rect key="frame" x="0.0" y="313.5" width="414" height="269"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iB-1S-8ub" customClass="DanglingView" customModule="DanglingEffect" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="269"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hunter" translatesAutoresizingMaskIntoConstraints="NO" id="wJV-NP-ceH">
+                                                <rect key="frame" x="10" y="10" width="165.5" height="165.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="wJV-NP-ceH" secondAttribute="height" multiplier="1:1" id="Nr2-kB-EP5"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big" translatesAutoresizingMaskIntoConstraints="NO" id="Q7P-Al-WPZ">
+                                                <rect key="frame" x="238.5" y="10" width="165.5" height="165.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Love a Hunter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGH-Fk-VEX">
+                                                <rect key="frame" x="10" y="180.5" width="165.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or Buy a Big?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2Q-lH-1ic">
+                                                <rect key="frame" x="238.5" y="180.5" width="165.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="b2Q-lH-1ic" firstAttribute="width" secondItem="Q7P-Al-WPZ" secondAttribute="width" id="3lf-MI-Dx8"/>
+                                            <constraint firstItem="Q7P-Al-WPZ" firstAttribute="width" secondItem="wJV-NP-ceH" secondAttribute="width" id="CJb-q0-o39"/>
+                                            <constraint firstItem="b2Q-lH-1ic" firstAttribute="top" secondItem="Q7P-Al-WPZ" secondAttribute="bottom" constant="5" id="Izo-BH-vaf"/>
+                                            <constraint firstAttribute="trailing" secondItem="Q7P-Al-WPZ" secondAttribute="trailing" constant="10" id="X5N-ic-0PB"/>
+                                            <constraint firstItem="wJV-NP-ceH" firstAttribute="width" secondItem="8iB-1S-8ub" secondAttribute="width" multiplier="0.4" id="bNc-9d-Zqs"/>
+                                            <constraint firstItem="b2Q-lH-1ic" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aGH-Fk-VEX" secondAttribute="trailing" constant="8" symbolic="YES" id="cwE-Z2-Lx4"/>
+                                            <constraint firstItem="aGH-Fk-VEX" firstAttribute="leading" secondItem="8iB-1S-8ub" secondAttribute="leading" constant="10" id="ehT-QY-yBs"/>
+                                            <constraint firstItem="Q7P-Al-WPZ" firstAttribute="height" secondItem="wJV-NP-ceH" secondAttribute="height" id="fND-iJ-FD1"/>
+                                            <constraint firstAttribute="trailing" secondItem="b2Q-lH-1ic" secondAttribute="trailing" constant="10" id="ie8-1d-FdX"/>
+                                            <constraint firstItem="aGH-Fk-VEX" firstAttribute="top" secondItem="wJV-NP-ceH" secondAttribute="bottom" constant="5" id="jYD-Ka-C0w"/>
+                                            <constraint firstItem="Q7P-Al-WPZ" firstAttribute="top" secondItem="8iB-1S-8ub" secondAttribute="top" constant="10" id="vMx-cH-c3c"/>
+                                            <constraint firstItem="wJV-NP-ceH" firstAttribute="top" secondItem="8iB-1S-8ub" secondAttribute="top" constant="10" id="vWC-IP-xRe"/>
+                                            <constraint firstItem="aGH-Fk-VEX" firstAttribute="width" secondItem="wJV-NP-ceH" secondAttribute="width" id="wGu-an-v3t"/>
+                                            <constraint firstItem="wJV-NP-ceH" firstAttribute="leading" secondItem="8iB-1S-8ub" secondAttribute="leading" constant="10" id="xDj-Pe-1Hx"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8iB-1S-8ub" secondAttribute="bottom" id="9jY-vs-9i3"/>
+                                    <constraint firstItem="8iB-1S-8ub" firstAttribute="leading" secondItem="rYI-rA-8CW" secondAttribute="leading" id="BlI-36-Ly6"/>
+                                    <constraint firstItem="8iB-1S-8ub" firstAttribute="top" secondItem="rYI-rA-8CW" secondAttribute="top" id="SbG-B4-rOW"/>
+                                    <constraint firstAttribute="trailing" secondItem="8iB-1S-8ub" secondAttribute="trailing" id="oXz-h5-Dse"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rYI-rA-8CW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2hI-tn-9jF"/>
+                            <constraint firstItem="rYI-rA-8CW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="BOp-FL-bTw"/>
+                            <constraint firstItem="rYI-rA-8CW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iwd-LF-M07"/>
+                            <constraint firstItem="rYI-rA-8CW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="qYz-La-YTb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="danglingView" destination="8iB-1S-8ub" id="br1-KB-Zgs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="33.482142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="big" width="1170" height="1100"/>
+        <image name="hunter" width="1500" height="970"/>
+    </resources>
+</document>
